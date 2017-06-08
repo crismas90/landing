@@ -1,11 +1,9 @@
 $(function () {
-    $('a[href^="#"]').on("click", function (e) {
-        var target = $(this).attr('href');
-        var strip = target.slice(1);
-        var anchor = $("a[name='" + strip + "']");
+    $("#myNavbar").on("click", "a",function (e) {
         e.preventDefault();
-        $('html, body').animate({
-            scrollTop: anchor.offset().top
-        }, '2000');
+        var target = $(this).attr('href');
+        var top = $(target).offset().top;
+        $('html, body').animate({scrollTop: top}, 1000);
+        return false;
     })
-})
+});
