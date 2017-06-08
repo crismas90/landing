@@ -1,4 +1,4 @@
-# landing.github.io
+# landing page
 
 Лендинг на bootstrap framework,анимация WOW.js
 
