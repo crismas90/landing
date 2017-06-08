@@ -38,24 +38,24 @@ p {
 }
 .btn {
     transition: all 300ms ease-in-out;
-    font-weight: 500 !important;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
 .btn:hover {
-    background-color: #ededed !important;
-    color: #3c3c3c !important;
-    border: 1px solid #fff !important;
+    background-color: #ededed;
+    color: #3c3c3c;
+    border: 1px solid #fff;
 }
 
 /*Navigation--------------------------------------------------------------*/
 .navbar{
-    background-color: #222222 !important;
+    background-color: #222222;
     text-transform: uppercase;
     font-family: 'PT Sans Narrow',Arial,sans-serif;
     font-weight: 700;
 }
-.navbar a{
+.navbar a {
     color: #fff !important;
     opacity: 0.7
 }
@@ -264,7 +264,6 @@ p {
     .team {
         padding: 50px;
     }
-
 }
 /*Clients--------------------------------------------------------------*/
 
@@ -275,7 +274,6 @@ p {
     color: #fff;
 }
 .clients h2{
-
     margin-bottom: 20px;
 }
 .clients p{
@@ -312,7 +310,7 @@ p {
     border-radius: 0 ;
 }
 .contact span {
-    border-radius: 0 !important;
+    border-radius: 0 ;
 }
 .contact .btn {
     width: 100%;
@@ -322,8 +320,8 @@ p {
     color: #fff;
 }
 .contact .btn:hover {
-    background-color: #a85959 !important;
-    color: #fff !important;
+    background-color: #a85959 ;
+    color: #fff ;
 }
 
 /*Footer--------------------------------------------------------------*/
@@ -348,13 +346,25 @@ p {
 .footer input {
     height: 40px;
     width: 150px;
-    padding: 5px;
     border: none;
     background-color: #cccccc;
     color: #000
+}
+.footer-input {
+    padding: 5px;
 }
 .footer .btn {
     padding: 9px 5px 9px;
     margin: -3px 0 0 5px;
     border-radius: 0;
+}
+
+@media(max-width:320px){
+    .footer input {
+        width: 100%;
+    }
+    .footer .btn {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
 }
